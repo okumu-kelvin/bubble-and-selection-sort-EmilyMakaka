@@ -11,8 +11,3 @@ def selection_sort(arr):
 
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-
-def print_array(arr):
-    for val in arr:
-        print(val, end=" ")
-    print()
