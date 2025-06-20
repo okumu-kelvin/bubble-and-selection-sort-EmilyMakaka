@@ -1,5 +1,5 @@
 def bubble_sort(unsorted_list):
-    arr = unsorted_list.copy()
+    arr = unsorted_list.copy()  # Create a copy to avoid modifying the original list
     n = len(arr)
     for i in range(n):
         swapped = False
@@ -16,5 +16,20 @@ def bubble_sort(unsorted_list):
             break
 
     return arr
+
+# Test cases
+def test_sorted():
+    assert bubble_sort([1, 2, 3]) == [1, 2, 3]
+
+def test_reverse():
+    assert bubble_sort([3, 2, 1]) == [1, 2, 3]
+
+def test_duplicates():
+    assert bubble_sort([4, 5, 3, 4]) == [3, 4, 4, 5]
+
+test_sorted()
+test_reverse()
+test_duplicates()
+
 
 
